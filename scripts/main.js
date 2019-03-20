@@ -1,7 +1,6 @@
 requirejs([
     'scripts/helper/util',
     'jquery',
-    'jquery-perf',
 ], function(util, $) {
     console.log('main loading')
     util()
