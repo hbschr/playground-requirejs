@@ -3,30 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>My Sample Project</title>
-        <!-- data-main attribute tells require.js to load
-             scripts/main.js after require.js loads. -->
         <script src="node_modules/requirejs/require.js"></script>
-        <script>
-            require.config({
-                paths: {
-                    'jquery': 'node_modules/jquery/dist/jquery',
-                    'jquery-private': 'scripts/jquery-private',
-                    'jquery-perf': 'scripts/jquery-perf-1.8.3',
-                },
-                map: {
-                    '*': {
-                        'jquery': 'jquery-private',
-                    },
-                    'jquery-private': {
-                        'jquery': 'jquery',
-                    },
-                    'jquery-perf': {
-                        'jquery': 'jquery',
-                    },
-                }
-            })
-            require(['scripts/main'])
-        </script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/init.js"></script>
     </head>
     <body>
         <h1>My Sample Project</h1>
