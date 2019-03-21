@@ -5,6 +5,9 @@ module.exports = function (grunt) {
         requirejs: {
             compile: {
                 options: {
+                    optimize: 'none',
+                    // generateSourceMaps: true,
+                    // findNestedDependencies: true,
                     baseUrl: '.',
                     mainConfigFile: 'scripts/config.js',
                     // name: 'path/to/almond', /* assumes a production build using almond, if you don't use almond, you
