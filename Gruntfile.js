@@ -9,10 +9,10 @@ module.exports = function (grunt) {
                     // generateSourceMaps: true,
                     // findNestedDependencies: true,
                     baseUrl: '.',
-                    mainConfigFile: 'scripts/config.js',
+                    mainConfigFile: [ 'scripts/config.js', 'scripts/config-map.js' ],
                     // name: 'path/to/almond', /* assumes a production build using almond, if you don't use almond, you
                     //              need to set the "includes" or "modules" option instead of name */
-                    include: [ 'scripts/init.js' ],
+                    include: [ 'scripts/config-map.js', 'scripts/init.js' ],
                     out: 'dist/main.js'
                 }
             }
