@@ -1,4 +1,7 @@
 define(['jquery'], function(jQuery) {
+
+    console.log('jquery-perf loading')
+
     var core_hasOwn = Object.prototype.hasOwnProperty;
     if (typeof Object.prototype.hasOwnProperty !== 'function') {
         Object.prototype.hasOwnProperty = function (name) {
